@@ -40,6 +40,14 @@ body {
   .titulo-filme {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14pt;
-      font-weight: bolder;
-      
+      color: white;
+  }
+
+  .link-filmes {
+      text-decoration: none;
+      color: white;
+  }
+
+  .link-filmes:hover { /*muda a cor do link quando o cursor está em cima*/
+      color:rgba(0, 0, 0, 0.712);
   }

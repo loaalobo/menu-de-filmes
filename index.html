@@ -21,20 +21,30 @@
     </a>
 
     <script>
-        var nomeDoFilme = ["Toy Story", "Star Wars", "Interestellar", "Sehor dos Anéis", "Harry Potter", "This Is Us", "Deuses Americanos", "Corginga"]
+        var imagemDoFilme = []
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg title=ToyStory")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg title=StarWars")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg title=Interstellar")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg title=SenhorDosAnéis")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg title=HarryPotter")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BYjNlOWY2OWEtMGQyOC00YWQ4LWJkMjUtYzU4NGEzNjM2MWY0XkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UX182_CR0,0,182,268_AL_.jpg title=ThisIsUs")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BYmJlOTRkYzktMDIxYy00MjFlLTlkOWYtZjVkNmY5MWMyNzU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=DeusesAmericanos")
+        imagemDoFilme.push("https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=Coringa")
 
-        var listaFilmes = []
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg title=ToyStory")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg title=StarWars")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg title=Interestellar")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg title=SenhorDosAnéis")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg title=HarryPotter")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BYjNlOWY2OWEtMGQyOC00YWQ4LWJkMjUtYzU4NGEzNjM2MWY0XkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UX182_CR0,0,182,268_AL_.jpg title=ThisIsUs")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BYmJlOTRkYzktMDIxYy00MjFlLTlkOWYtZjVkNmY5MWMyNzU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=DeusesAmericanos")
-        listaFilmes.push("https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=Coringa")
+        var nomeDoFilme = ["Toy Story", "Star Wars", "Interstellar", "Sehor dos Anéis", "Harry Potter", "This Is Us", "Deuses Americanos", "Corginga"]
 
-        for (var i = 0; i < listaFilmes.length && i < nomeDoFilme.length; i++) {
-            document.write(`<img src= ${listaFilmes[i]}> <p class="titulo-filme">Título: ${nomeDoFilme[i]}</p>`)
+        var linkDoFilme = []
+        linkDoFilme.push("https://www.youtube.com/watch?v=4KPTXpQehio")
+        linkDoFilme.push("https://www.youtube.com/watch?v=8Qn_spdM5Zg")
+        linkDoFilme.push("https://www.youtube.com/watch?v=zSWdZVtXT7E")
+        linkDoFilme.push("https://www.youtube.com/watch?v=0i86oM1nHjM")
+        linkDoFilme.push("https://www.youtube.com/watch?v=VyHV0BRtdxo")
+        linkDoFilme.push("https://www.youtube.com/watch?v=rR6-fctDmB0")
+        linkDoFilme.push("https://www.youtube.com/watch?v=a9fISBDrKCs")
+        linkDoFilme.push("https://www.youtube.com/watch?v=621pfj0EfIc")
+
+        for (var i = 0; i < imagemDoFilme.length && i < nomeDoFilme.length && i < linkDoFilme.length; i++) {
+            document.write(`<img src= ${imagemDoFilme[i]}> <p class="titulo-filme">Título: <a href="${linkDoFilme[i]}" target="_blank" class="link-filmes"><strong>${nomeDoFilme[i]}</strong></a></p>`)
         } //i = variável de iteração 
 
     </script>
