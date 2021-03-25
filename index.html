@@ -21,6 +21,8 @@
     </a>
 
     <script>
+        var nomeDoFilme = ["Toy Story", "Star Wars", "Interestellar", "Sehor dos Anéis", "Harry Potter", "This Is Us", "Deuses Americanos", "Corginga"]
+
         var listaFilmes = []
         listaFilmes.push("https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg title=ToyStory")
         listaFilmes.push("https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg title=StarWars")
@@ -31,8 +33,8 @@
         listaFilmes.push("https://m.media-amazon.com/images/M/MV5BYmJlOTRkYzktMDIxYy00MjFlLTlkOWYtZjVkNmY5MWMyNzU1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=DeusesAmericanos")
         listaFilmes.push("https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg title=Coringa")
 
-        for (var i = 0; i < listaFilmes.length; i++) {
-            document.write(`<img src= ${listaFilmes[i]}> <p>nome do filme</p>`)
+        for (var i = 0; i < listaFilmes.length && i < nomeDoFilme.length; i++) {
+            document.write(`<img src= ${listaFilmes[i]}> <p class="titulo-filme">Título: ${nomeDoFilme[i]}</p>`)
         } //i = variável de iteração 
 
     </script>
