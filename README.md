@@ -1,5 +1,9 @@
 # Menu
 
+Página desenvolvida durante a imersão dev do Alura.
+
+Objetivo:
+
 Criar uma array com as imagens dos filmes usando a sintaxe [];
 Utiliza o método filmes.push("imagemDoFilme") para inserir um novo elemento na lista;
 
